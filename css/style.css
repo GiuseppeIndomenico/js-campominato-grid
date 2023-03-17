@@ -28,8 +28,21 @@ height: 700px;
 }
 
 .square{
-width: calc(100% / 10);
-height: calc(100% / 10);
 border: 1px solid white;
+cursor: pointer;
+}
 
+.easy{
+    width: calc(100% / 10);
+height: calc(100% / 10);
+}
+
+.normal{
+    width: calc(100% / 9);
+height: calc(100% / 9);
+}
+
+.hard{
+    width: calc(100% / 7);
+height: calc(100% / 7);
 }
