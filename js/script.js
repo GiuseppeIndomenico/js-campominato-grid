@@ -11,6 +11,7 @@ const btnPlay = document.querySelector('button');
 //aggiungiamo l'evento che fa partire il gioco
 btnPlay.addEventListener('click', play);
 
+
 function play(e) {
     e.preventDefault();
     //in base alla difficoltà vengono scelti il numero di quadrati di cui deve essere la griglia di gioco;
@@ -37,11 +38,22 @@ function play(e) {
         document.getElementById('grid').innerHTML += `
         <div class="square ${level} d-flex align-items-center justify-content-center text-light fw-semibold">${i}</div>
         `
-    } 
-   
-    
-    let squares = document.querySelectorAll('square');
-    console.log(squares);
-}
 
+        if (i === numSquares) {
+
+
+            let squares = document.querySelectorAll('.square');
+
+            squares.addEventListener('click', check);
+        }
+    }
+
+
+    
+    function check() {
+    
+        console.log('ok');
+    }
+
+}
 

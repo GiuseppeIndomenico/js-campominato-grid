@@ -47,3 +47,7 @@ height: calc(100% / 9);
     width: calc(100% / 7);
 height: calc(100% / 7);
 }
+
+.blueCheck{
+    background-color: blue;
+}
