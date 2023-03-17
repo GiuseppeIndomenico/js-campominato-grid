@@ -31,13 +31,18 @@ function play(e) {
             break;
     };
     //   console.log(numSquares);
-    document.getElementById('grid').innerHTML = '' 
+    document.getElementById('grid').innerHTML = ``;
 
     for (let i = 1; i <= numSquares; i++) {
         document.getElementById('grid').innerHTML += `
         <div class="square ${level} d-flex align-items-center justify-content-center text-light fw-semibold">${i}</div>
         `
-    }
-    document.getElementById('textIntro').innerHTML=''
-
+    } 
+   
+    document.getElementById('textIntro').classList.add('d-none');
+    
+    let squares = document.querySelectorAll('square');
+    console.log(squares);
 }
+
+
