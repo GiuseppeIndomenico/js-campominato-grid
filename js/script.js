@@ -39,7 +39,6 @@ function play(e) {
         `
     } 
    
-    document.getElementById('textIntro').classList.add('d-none');
     
     let squares = document.querySelectorAll('square');
     console.log(squares);

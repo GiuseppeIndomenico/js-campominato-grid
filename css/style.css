@@ -12,6 +12,7 @@ header, footer{
 main{
     width: 100%;
     height: calc(100% - 160px);
+    overflow-y: auto;
 }
 
 .gi-logo{
