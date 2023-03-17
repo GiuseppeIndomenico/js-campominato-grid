@@ -39,21 +39,20 @@ function play(e) {
         <div class="square ${level} d-flex align-items-center justify-content-center text-light fw-semibold">${i}</div>
         `
 
-        if (i === numSquares) {
 
 
-            let squares = document.querySelectorAll('.square');
+        squares=numSquares[i]
+        console.log(squares);
 
-            squares.addEventListener('click', check);
-        }
     }
 
 
-    
-    function check() {
-    
-        console.log('ok');
-    }
+
 
 }
+
+
+  
+
+
 
