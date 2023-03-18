@@ -40,19 +40,29 @@ function play(e) {
         `
 
 
-
-        squares=numSquares[i]
-        console.log(squares);
-
     }
 
+    squares = document.querySelectorAll('.square')
+    //    console.log(squares);
+    let btnCheck= ''
+    for (let i = 0; i < squares.length; i++) {
+    //    btnCheck= squares[i].addEventListener('click', function () {
+    //         document.classlist.add('blueCheck')
+    //     });
+        btnCheck= squares[i]
+        
+        btnCheck.document.addEventListener('click', function(){
+            console.log('ok')
 
 
-
+        })
+    }
 }
 
 
-  
+
+
+
 
 
 
