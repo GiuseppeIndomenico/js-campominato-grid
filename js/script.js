@@ -45,7 +45,9 @@ function play(e) {
     for (let i = 0; i < squares.length; i++) {
 
         squares[i].addEventListener('click', function () {
-            console.log('ok')
+          //   console.log('sono il tasto numero i:' + i)
+            squares[i].classList.add('blueCheck');
+       
         })
     }
 
