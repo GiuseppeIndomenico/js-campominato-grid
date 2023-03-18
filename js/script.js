@@ -38,25 +38,23 @@ function play(e) {
         document.getElementById('grid').innerHTML += `
         <div class="square ${level} d-flex align-items-center justify-content-center text-light fw-semibold">${i}</div>
         `
-
-
     }
 
     squares = document.querySelectorAll('.square')
-    //    console.log(squares);
-    let btnCheck= ''
+  //  console.log(squares);
     for (let i = 0; i < squares.length; i++) {
-    //    btnCheck= squares[i].addEventListener('click', function () {
-    //         document.classlist.add('blueCheck')
-    //     });
-        btnCheck= squares[i]
-        
-        btnCheck.document.addEventListener('click', function(){
+
+        squares[i].addEventListener('click', function () {
             console.log('ok')
-
-
         })
     }
+
+
+
+
+
+
+
 }
 
 
